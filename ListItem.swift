@@ -1,5 +1,4 @@
 import Foundation
-import SwiftUI
 
 // MARK: - Data Model Declaration
 final class ListItem {
