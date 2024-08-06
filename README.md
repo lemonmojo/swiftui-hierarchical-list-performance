@@ -1,6 +1,6 @@
 # SwiftUI Hierarchical List Performance
 
-This is a demo project that highlights performance issues with hierarchical SwiftUI lists.
+This is a demo project that highlights performance issues with [hierarchical SwiftUI lists](https://developer.apple.com/documentation/swiftui/list#Creating-hierarchical-lists).
 
 There are three main problems:
 
