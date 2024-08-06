@@ -16,3 +16,6 @@ All three problems are much more pronounced on macOS (tested on a Mac Studio M2)
 
 Instruments shows that 99% of the CPU time is spent somewhere deep inside SwiftUI.
 Various attempts have been made to fix the problems (as documented in the code) but none of them have been successful.
+
+There are two different data sets included in the demo. One can switch between them by commenting out one of the `let rootItem …` declarations and commenting in the other in `ContentView.swift`.
+The default example has a flat list with 100.000 items. The "real-world" example has 4 folders, each containing 25.000 items which is faster to render initially, but as soon as you start exanding folders it's slow again.
