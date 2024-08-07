@@ -34,9 +34,11 @@ struct ContentView: View {
             // Tried to assign an ID to the List, still slow.
 //            .id(UUID())
             .toolbar {
-                Button("Shuffle") {
+                Button(action: {
                     items = items.shuffled()
-                }
+                }, label: {
+                    Label("Shuffle", systemImage: "shuffle.circle")
+                })
             }
         } detail: {
             // Feel free to comment the whole body here out, it's still slow.
