@@ -22,12 +22,6 @@ struct ContentView: View {
     
     var body: some View {
         NavigationSplitView {
-            Button {
-                items = items.shuffled()
-            } label: {
-                Text("Shuffle")
-            }
-
             List(items,
                  id: \.self, // Tried to use \.id, still slow.
                  children: \.children,
@@ -39,6 +33,11 @@ struct ContentView: View {
             }
             // Tried to assign an ID to the List, still slow.
 //            .id(UUID())
+            .toolbar {
+                Button("Shuffle") {
+                    items = items.shuffled()
+                }
+            }
         } detail: {
             // Feel free to comment the whole body here out, it's still slow.
             if let item = selectedItem {
