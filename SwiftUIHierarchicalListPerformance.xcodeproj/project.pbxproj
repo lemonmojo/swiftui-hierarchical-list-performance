@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEB110D42C732D3A00FB9A96 /* OutlineViewController-uikit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB110D32C732D3A00FB9A96 /* OutlineViewController-uikit.swift */; };
+		AEC1FC412C6F8ADC0075F09F /* OutlineViewController-appkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC1FC402C6F8ADC0075F09F /* OutlineViewController-appkit.swift */; };
+		AEC1FC442C6FDEAB0075F09F /* OutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC1FC432C6FDEA50075F09F /* OutlineView.swift */; };
 		E74F28F42C62027700370C35 /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74F28F32C62027700370C35 /* DemoApp.swift */; };
 		E74F28F62C62027700370C35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74F28F52C62027700370C35 /* ContentView.swift */; };
 		E74F28F82C62027800370C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E74F28F72C62027800370C35 /* Assets.xcassets */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AEB110D32C732D3A00FB9A96 /* OutlineViewController-uikit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OutlineViewController-uikit.swift"; sourceTree = "<group>"; };
+		AEC1FC402C6F8ADC0075F09F /* OutlineViewController-appkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OutlineViewController-appkit.swift"; sourceTree = "<group>"; };
+		AEC1FC432C6FDEA50075F09F /* OutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineView.swift; sourceTree = "<group>"; };
 		E74F28F02C62027700370C35 /* SwiftUIHierarchicalListPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIHierarchicalListPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74F28F32C62027700370C35 /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		E74F28F52C62027700370C35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,11 +41,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AEC1FC3F2C6F5E6C0075F09F /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1FC402C6F8ADC0075F09F /* OutlineViewController-appkit.swift */,
+			);
+			path = AppKit;
+			sourceTree = "<group>";
+		};
+		AEC1FC422C6FDE980075F09F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				AEB110D32C732D3A00FB9A96 /* OutlineViewController-uikit.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		E74F28E72C62027700370C35 = {
 			isa = PBXGroup;
 			children = (
+				AEC1FC422C6FDE980075F09F /* UIKit */,
+				AEC1FC3F2C6F5E6C0075F09F /* AppKit */,
 				E78A9C242C62267600AA2FF2 /* README.md */,
 				E74F28F52C62027700370C35 /* ContentView.swift */,
+				AEC1FC432C6FDEA50075F09F /* OutlineView.swift */,
 				E78A9C222C62031000AA2FF2 /* ListItem.swift */,
 				E74F28F32C62027700370C35 /* DemoApp.swift */,
 				E74F28F72C62027800370C35 /* Assets.xcassets */,
@@ -127,7 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E78A9C232C62031000AA2FF2 /* ListItem.swift in Sources */,
+				AEB110D42C732D3A00FB9A96 /* OutlineViewController-uikit.swift in Sources */,
+				AEC1FC412C6F8ADC0075F09F /* OutlineViewController-appkit.swift in Sources */,
 				E74F28F62C62027700370C35 /* ContentView.swift in Sources */,
+				AEC1FC442C6FDEAB0075F09F /* OutlineView.swift in Sources */,
 				E74F28F42C62027700370C35 /* DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
