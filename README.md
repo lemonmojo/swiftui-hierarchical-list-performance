@@ -21,3 +21,7 @@ There are two different data sets included in the demo. One can switch between t
 The default example has a flat list with 100.000 items. The "real-world" example has 4 folders, each containing 25.000 items which is faster to render initially, but as soon as you start expanding folders it's slow again.
 
 See [this repo](https://github.com/lemonmojo/appkit-hierarchical-list-performance) for an implementation using AppKit's `NSOutlineView` and [this repo](https://github.com/lemonmojo/uikit-hierarchical-list-performance) for an implementation using UIKit's `UICollectionView` where everything is blazing fast using the same data set.
+
+## Update June 10 2025
+
+Despite WWDC 25 announcements of much improved SwiftUI List performance, hierarchical lists, or at least the kind of list in this sample project are still slow on both iOS and macOS 26 beta 1.
